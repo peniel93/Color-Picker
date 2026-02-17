@@ -118,7 +118,7 @@ function updateStats() {
         }
     });
     
-    // Update display
+    // Update display and i don't know
     moods.forEach(mood => {
         document.getElementById(`${mood}-count`).textContent = counts[mood];
     });
