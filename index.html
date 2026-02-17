@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Color Picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Mood Color Picker</h1>
+        <p class="subtitle">Click a color to log your mood today</p>
+        
+        <div class="mood-buttons">
+            <button class="mood-btn" data-mood="happy" data-color="#FFD93D">😊 Happy</button>
+            <button class="mood-btn" data-mood="sad" data-color="#6C9BCF">😢 Sad</button>
+            <button class="mood-btn" data-mood="angry" data-color="#FF6B6B">😤 Angry</button>
+            <button class="mood-btn" data-mood="tired" data-color="#A9A9A9">😴 Tired</button>
+            <button class="mood-btn" data-mood="calm" data-color="#98D8AA">🧘 Calm</button>
+        </div>
+
+        <div class="timeline-container">
+            <h3>Last 7 Days</h3>
+            <div class="timeline" id="timeline"></div>
+        </div>
+
+        <div class="stats-container">
+            <h3>This Week's Mood</h3>
+            <div class="stats" id="stats">
+                <div class="stat-item">😊 Happy: <span id="happy-count">0</span></div>
+                <div class="stat-item">😢 Sad: <span id="sad-count">0</span></div>
+                <div class="stat-item">😤 Angry: <span id="angry-count">0</span></div>
+                <div class="stat-item">😴 Tired: <span id="tired-count">0</span></div>
+                <div class="stat-item">🧘 Calm: <span id="calm-count">0</span></div>
+            </div>
+            <button class="reset-btn" id="resetBtn">Reset All Data</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
